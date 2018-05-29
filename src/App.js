@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import classes from "./App.css";
 const unirest = require("unirest");
 
 class App extends Component {
@@ -13,18 +14,18 @@ class App extends Component {
       )
       .header("Accept", "text/plain")
       .end(function(result) {
-        console.log(result.status, result.headers, result.body);
+        console.log(result.body);
       });
   }
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div className={classes.App}>
+        <header className={classes.AppHeader}>
+          <img src={logo} className={classes.AppLogo} alt="logo" />
+          <h1 className={classes.AppTitle}>Welcome to React</h1>
         </header>
-        <p className="App-intro">
+        <p className={classes.AppIntro}>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
