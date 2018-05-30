@@ -83,6 +83,13 @@ const MainMenu = props => {
           <span>Programming</span>
         </Menu.Item>
 
+        <Menu.Item key="8" onClick={() => props.navigateTo("/fun")}>
+          <Icon className={classes.NavIcon}>
+            <i className="fas fa-bug" />
+          </Icon>
+          <span>Fun</span>
+        </Menu.Item>
+
         <SubMenu
           key="sub2"
           title={
