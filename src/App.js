@@ -2,19 +2,16 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import classes from "./App.css";
-const unirest = require("unirest");
+import axios from "axios";
 
 class App extends Component {
   componentWillMount() {
-    unirest
-      .get("https://simple-weather.p.mashape.com/aqi?lat=30.0355&lng=31.223")
-      .header(
-        "X-Mashape-Key",
-        "J3YJWUlCN1mshIPwlMb5ilplW4qYp1Lz9x1jsnM6OO3OiTushH"
+    axios
+      .get(
+        "https://newsapi.org/v2/everything?q=java&language=en&sortBy=publishedAt&apiKey=57b345a9885145969cc144ad50fbf66d"
       )
-      .header("Accept", "text/plain")
-      .end(function(result) {
-        console.log(result.body);
+      .then(res => {
+        console.log(res.data.articles);
       });
   }
 
