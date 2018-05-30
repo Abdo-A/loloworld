@@ -1,0 +1,8 @@
+.MainMenu {
+  float: left;
+}
+
+.MainMenu img {
+  width: 200%;
+  margin-left: -6px;
+}

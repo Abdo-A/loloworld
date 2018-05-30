@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import classes from "./App.css";
 import axios from "axios";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Layout from "./hoc/Layout/Layout";
 
 class App extends Component {
   componentWillMount() {
@@ -18,13 +19,20 @@ class App extends Component {
   render() {
     return (
       <div className={classes.App}>
-        <header className={classes.AppHeader}>
-          <img src={logo} className={classes.AppLogo} alt="logo" />
-          <h1 className={classes.AppTitle}>Welcome to React</h1>
-        </header>
-        <p className={classes.AppIntro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <BrowserRouter>
+          <Layout>
+            <Switch>
+              <Route path="/" exact render={() => "Main Page"} />
+              <Route path="/music" render={() => "music"} />
+              <Route path="/salah" render={() => "salah"} />
+              <Route path="/football" render={() => "football"} />
+              <Route path="/china" render={() => "china"} />
+              <Route path="/painting" render={() => "painting"} />
+              <Route path="/movies" render={() => "movies"} />
+              <Route path="/programming" render={() => "programming"} />
+            </Switch>
+          </Layout>
+        </BrowserRouter>
       </div>
     );
   }
