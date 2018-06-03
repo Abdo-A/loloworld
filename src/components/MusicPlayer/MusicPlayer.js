@@ -6,9 +6,11 @@ const MusicPlayer = props => {
   let lyrics = props.lyrics;
   return (
     <div className={classes.MusicPlayer}>
-      {props.name}
-      {" - "}
-      {props.singer}
+      <strong>
+        {props.name}
+        {" - "}
+        <i>{props.singer}</i>
+      </strong>
       <br />
       <audio controls autoPlay className={classes.Audio} id="floatingSong">
         <source src={props.src} />

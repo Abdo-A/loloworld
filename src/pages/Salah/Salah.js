@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import classes from "./Salah.css";
 class Salah extends Component {
   componentWillMount() {
     axios
@@ -12,7 +12,7 @@ class Salah extends Component {
       });
   }
   render() {
-    return "Salah";
+    return <div className={classes.Salah}>Salah</div>;
   }
 }
 
