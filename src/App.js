@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./hoc/Layout/Layout";
 import Salah from "./pages/Salah/Salah";
 import Fun from "./pages/Fun/Fun";
-import Music from "./pages/Music/Music";
+import Events from "./pages/Events/Events";
 
 class App extends Component {
   render() {
@@ -15,10 +15,10 @@ class App extends Component {
           <Layout>
             <Switch>
               <Route path="/" exact render={() => "Main Page"} />
-              <Route path="/music" component={Music} />
               <Route path="/salah" component={Salah} />
               <Route path="/football" render={() => "football"} />
               <Route path="/china" render={() => "china"} />
+              <Route path="/events" component={Events} />
               <Route path="/painting" render={() => "painting"} />
               <Route path="/movies" render={() => "movies"} />
               <Route path="/programming" render={() => "programming"} />

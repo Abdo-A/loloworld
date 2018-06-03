@@ -27,14 +27,9 @@ const MainMenu = props => {
         theme="dark"
         inlineCollapsed={props.menuCollapsed}
       >
-        <Menu.Item key="0" onClick={() => props.navigateTo("/")}>
+        <Menu.Item key="1" onClick={() => props.navigateTo("/")}>
           <Icon type="home" className={classes.NavIcon} />
           <span>Main Page</span>
-        </Menu.Item>
-
-        <Menu.Item key="1" onClick={() => props.navigateTo("/music")}>
-          <Icon type="forward" className={classes.NavIcon} />
-          <span>Music</span>
         </Menu.Item>
 
         <Menu.Item key="2" onClick={() => props.navigateTo("/salah")}>
@@ -62,28 +57,35 @@ const MainMenu = props => {
           <span>China News</span>
         </Menu.Item>
 
-        <Menu.Item key="5" onClick={() => props.navigateTo("/painting")}>
+        <Menu.Item key="5" onClick={() => props.navigateTo("/events")}>
+          <Icon className={classes.NavIcon}>
+            <i className="fas fa-star" />
+          </Icon>
+          <span>Events</span>
+        </Menu.Item>
+
+        <Menu.Item key="6" onClick={() => props.navigateTo("/painting")}>
           <Icon className={classes.NavIcon}>
             <i className="fas fa-paint-brush" />
           </Icon>
           <span>Painting</span>
         </Menu.Item>
 
-        <Menu.Item key="6" onClick={() => props.navigateTo("/movies")}>
+        <Menu.Item key="7" onClick={() => props.navigateTo("/movies")}>
           <Icon className={classes.NavIcon}>
             <i className="fas fa-film" />
           </Icon>
           <span>Movies</span>
         </Menu.Item>
 
-        <Menu.Item key="7" onClick={() => props.navigateTo("/programming")}>
+        <Menu.Item key="8" onClick={() => props.navigateTo("/programming")}>
           <Icon className={classes.NavIcon}>
             <i className="fas fa-desktop" />
           </Icon>
           <span>Programming</span>
         </Menu.Item>
 
-        <Menu.Item key="8" onClick={() => props.navigateTo("/fun")}>
+        <Menu.Item key="9" onClick={() => props.navigateTo("/fun")}>
           <Icon className={classes.NavIcon}>
             <i className="fas fa-bug" />
           </Icon>
@@ -99,11 +101,11 @@ const MainMenu = props => {
             </span>
           }
         >
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
+          <Menu.Item key="10">Option 9</Menu.Item>
+          <Menu.Item key="11">Option 10</Menu.Item>
           <SubMenu key="sub3" title="Submenu">
-            <Menu.Item key="11">Option 11</Menu.Item>
-            <Menu.Item key="12">Option 12</Menu.Item>
+            <Menu.Item key="12">Option 11</Menu.Item>
+            <Menu.Item key="13">Option 12</Menu.Item>
           </SubMenu>
         </SubMenu>
       </Menu>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Fun extends Component {
   render() {
-    return "Fun";
+    return <div>Fun</div>;
   }
 }
 
