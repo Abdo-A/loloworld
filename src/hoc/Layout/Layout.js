@@ -45,9 +45,11 @@ class Layout extends Component {
           toggleMenuCollapsed={this.toggleMenuCollapsed}
           navigateTo={this.navigateTo}
         />
-        <MusicPlayer {...songs[this.state.currentSong]} />
-        <button onClick={() => this.navigateSong("last")}>last</button>
-        <button onClick={() => this.navigateSong("next")}>next</button>
+        <MusicPlayer
+          {...songs[this.state.currentSong]}
+          navigateSong={this.navigateSong}
+          currentSong={this.state.currentSong}
+        />
         <main>{this.props.children}</main>
       </Aux>
     );

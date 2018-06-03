@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./MusicPlayer.css";
-import { Popover, Button } from "antd";
+import { Popover, Button, Icon } from "antd";
 
 const MusicPlayer = props => {
   let lyrics = props.lyrics;
@@ -14,9 +14,20 @@ const MusicPlayer = props => {
         <source src={props.src} />
         Your browser does not support the audio tag.
       </audio>
-      <Popover content={lyrics} title="Lyrics" trigger="click">
-        <Button>Lyrics</Button>
-      </Popover>
+      <div>
+        <Button
+          onClick={() => props.navigateSong("last")}
+          disabled={props.currentSong === 0}
+        >
+          <Icon type="left" />Last
+        </Button>
+        <Popover content={lyrics} title="Lyrics" trigger="click">
+          <Button type="primary">Lyrics</Button>
+        </Popover>
+        <Button onClick={() => props.navigateSong("next")}>
+          Next<Icon type="right" />
+        </Button>
+      </div>
     </div>
   );
 };
