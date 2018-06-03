@@ -1,10 +1,13 @@
+import { getLyrics } from "./lyrics";
+
 const songs = [
   {
     id: 1,
     name: "I need a doctor",
     singer: "Eminem and Skyler Grey",
     src:
-      "https://vocaroo.com/media_command.php?media=s0qe7ewBhSpX&command=download_mp3"
+      "https://vocaroo.com/media_command.php?media=s0qe7ewBhSpX&command=download_mp3",
+    lyrics: getLyrics(1)
   },
   {
     id: 2,

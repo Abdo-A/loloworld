@@ -1,7 +1,9 @@
 import React from "react";
 import classes from "./MusicPlayer.css";
+import { Popover, Button } from "antd";
 
 const MusicPlayer = props => {
+  let lyrics = props.lyrics;
   return (
     <div className={classes.MusicPlayer}>
       {props.name}
@@ -12,6 +14,9 @@ const MusicPlayer = props => {
         <source src={props.src} />
         Your browser does not support the audio tag.
       </audio>
+      <Popover content={lyrics} title="Lyrics" trigger="click">
+        <Button>Lyrics</Button>
+      </Popover>
     </div>
   );
 };

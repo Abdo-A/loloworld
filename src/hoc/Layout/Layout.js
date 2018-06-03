@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import Aux from "../Auxe/Auxe";
 import MainMenu from "../../components/navigation/MainMenu/MainMenu";
 import MusicPlayer from "../../components/MusicPlayer/MusicPlayer";
-import songs from "../../partials/songs";
+import songs from "../../partials/songs/songs";
 
 class Layout extends Component {
   state = {
@@ -45,11 +45,7 @@ class Layout extends Component {
           toggleMenuCollapsed={this.toggleMenuCollapsed}
           navigateTo={this.navigateTo}
         />
-        <MusicPlayer
-          name={songs[this.state.currentSong].name}
-          singer={songs[this.state.currentSong].singer}
-          src={songs[this.state.currentSong].src}
-        />
+        <MusicPlayer {...songs[this.state.currentSong]} />
         <button onClick={() => this.navigateSong("last")}>last</button>
         <button onClick={() => this.navigateSong("next")}>next</button>
         <main>{this.props.children}</main>

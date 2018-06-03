@@ -1,5 +1,6 @@
 .MainMenu {
   float: left;
+  position: fixed;
 }
 
 .MainMenu img {
