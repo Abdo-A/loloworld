@@ -1,5 +1,3 @@
-import { getLyrics } from "./lyrics";
-
 const songs = [
   {
     id: 1,
@@ -7,7 +5,7 @@ const songs = [
     singer: "Eminem and Skyler Grey",
     src:
       "https://vocaroo.com/media_command.php?media=s0qe7ewBhSpX&command=download_mp3",
-    lyrics: getLyrics(1)
+    lyrics: "getLyrics(1)"
   },
   {
     id: 2,
@@ -15,7 +13,7 @@ const songs = [
     singer: "Jess Glynne",
     src:
       "https://vocaroo.com/media_command.php?media=s0Wn94v7SgY6&command=download_mp3",
-    lyrics: getLyrics(2)
+    lyrics: "getLyrics(2)"
   },
   {
     id: 3,
@@ -23,7 +21,7 @@ const songs = [
     singer: "Lee Brice",
     src:
       "https://vocaroo.com/media_command.php?media=s0yARL8yDCva&command=download_mp3",
-    lyrics: getLyrics(3)
+    lyrics: "getLyrics(3)"
   },
   {
     id: 4,
@@ -31,7 +29,7 @@ const songs = [
     singer: "Ed Sheeran",
     src:
       "https://vocaroo.com/media_command.php?media=s0lW9Dn3d0nt&command=download_mp3",
-    lyrics: getLyrics(4)
+    lyrics: "getLyrics(4)"
   },
   {
     id: 5,
@@ -39,7 +37,7 @@ const songs = [
     singer: "John Lennon",
     src:
       "https://vocaroo.com/media_command.php?media=s0UK3uZRrDkU&command=download_mp3",
-    lyrics: getLyrics(5)
+    lyrics: "getLyrics(5)"
   },
   {
     id: 6,
@@ -47,7 +45,7 @@ const songs = [
     singer: "The A Team",
     src:
       "https://vocaroo.com/media_command.php?media=s0O3sFgpuOi0&command=download_mp3",
-    lyrics: getLyrics(6)
+    lyrics: "getLyrics(6)"
   },
   {
     id: 7,
@@ -55,7 +53,7 @@ const songs = [
     singer: "Linkin Park",
     src:
       "https://vocaroo.com/media_command.php?media=s0OcD5eI5KrL&command=download_mp3",
-    lyrics: getLyrics(7)
+    lyrics: "getLyrics(7)"
   },
   {
     id: 8,
@@ -63,7 +61,7 @@ const songs = [
     singer: "Ed Sheeran",
     src:
       "https://vocaroo.com/media_command.php?media=s0vxE9uiGPkL&command=download_mp3",
-    lyrics: getLyrics(8)
+    lyrics: "getLyrics(8)"
   },
   {
     id: 9,
@@ -71,7 +69,7 @@ const songs = [
     singer: "Linkin Park",
     src:
       "https://vocaroo.com/media_command.php?media=s0IYkZPo8YQP&command=download_mp3",
-    lyrics: getLyrics(9)
+    lyrics: "getLyrics(9)"
   },
   {
     id: 10,
@@ -79,7 +77,7 @@ const songs = [
     singer: "New Rules",
     src:
       "https://vocaroo.com/media_command.php?media=s0NNpYXvFr06&command=download_mp3",
-    lyrics: getLyrics(10)
+    lyrics: "getLyrics(10)"
   },
   {
     id: 11,
@@ -87,7 +85,7 @@ const songs = [
     singer: "Taylor Swift",
     src:
       "https://vocaroo.com/media_command.php?media=s09J35D2f4mO&command=download_mp3",
-    lyrics: getLyrics(11)
+    lyrics: "getLyrics(11)"
   },
   {
     id: 12,
@@ -95,7 +93,7 @@ const songs = [
     singer: "Charlie Puth",
     src:
       "https://vocaroo.com/media_command.php?media=s0P4Arpjla89&command=download_mp3",
-    lyrics: getLyrics(12)
+    lyrics: "getLyrics(12)"
   }
 ];
 
